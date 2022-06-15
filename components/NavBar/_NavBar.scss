@@ -1,0 +1,67 @@
+.NavBar {
+  height: 100px;
+  position: sticky;
+  background: black;
+  top: 0;
+  z-index: 1;
+  .Wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .Left {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      .Logo {
+        background-color: lightcoral;
+        background-image: $gradient-main;
+        background-size: 100%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+      }
+      .SocialsWrapper {
+        padding: 10px 0 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .Icon {
+          padding-left: 20px;
+        }
+      }
+    }
+    .Right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .LinkWrapper {
+        .Link {
+          padding-right: 10px;
+        }
+      }
+      .ResumeButton {
+        all: unset;
+        color: $text-main;
+        padding: 0 20px;
+        font-weight: 700;
+        border: solid 1px transparent;
+        border-image: $gradient-main;
+        -webkit-border-image: $gradient-main;
+        -moz-border-image: $gradient-main;
+        border-image-slice: 1;
+        -webkit-border-image-slice: 1;
+        -moz-border-image-slice: 1;
+      }
+    }
+  }
+}

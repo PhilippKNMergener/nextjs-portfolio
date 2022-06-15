@@ -1,0 +1,15 @@
+//Global variables
+$gradient-main: linear-gradient(to right, #7ae2f0, #5b00c4);
+$text-main: #fff;
+$text-secondary: #b9b9b9;
+$text-secondary: #9b9b9b;
+
+//Style sheets imports
+@import "/pages/index";
+
+//Global css
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: $text-secondary;
+}
