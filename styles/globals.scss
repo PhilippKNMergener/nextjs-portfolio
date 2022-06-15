@@ -1,13 +1,16 @@
 //Global variables
-$gradient-main: linear-gradient(to right, #7ae2f0, #5b00c4);
-$text-main: #fff;
-$text-secondary: #b9b9b9;
+$main-teal: #7ae2f0;
+$main-purple: #5b00c4;
+$text-main: #e7e7e7;
 $text-secondary: #9b9b9b;
+$bg-main: #00031a;
+$gradient-main: linear-gradient(to right, $main-teal, $main-purple);
+$gradient-radial: radial-gradient(circle, $main-teal, $main-purple);
 
 //Style sheets imports
 @import "/pages/index";
 
-//Global css
+//Global Styling
 * {
   margin: 0;
   font-family: "Poppins", sans-serif;

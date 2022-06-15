@@ -1,7 +1,23 @@
 @import "/components/NavBar/NavBar";
 
 .HomePage {
-  overflow: scroll;
-  background: darkslateblue;
+  overflow-x: hiden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  background: $bg-main;
   height: 100vh;
+  .Landing {
+    overflow: hidden;
+    height: inherit;
+    .Wrapper {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }

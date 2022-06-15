@@ -1,4 +1,5 @@
-import { FiTwitter, FiGithub, FiLinkedin } from "react-icons/fi";
+import { GitHub, LinkedIn, Twitter } from "@mui/icons-material";
+import Link from "next/link";
 
 type Props = {};
 
@@ -7,7 +8,7 @@ const NavBar = (props: Props) => {
     <div className="NavBar">
       <div className="Wrapper">
         <div className="Left">
-          <h1 className="Logo">Philipp.</h1>
+          <h1 className="Logo">&#123; Philipp &#125;</h1>
           <div className="SocialsWrapper">
             <a
               rel="noreferrer"
@@ -15,7 +16,7 @@ const NavBar = (props: Props) => {
               href="https://www.github.com/PhilippKNMergener/"
               className="Icon"
             >
-              <FiGithub />
+              <GitHub />
             </a>
             <a
               rel="noreferrer"
@@ -23,7 +24,7 @@ const NavBar = (props: Props) => {
               href="https://www.twitter.com/philipp_knm"
               className="Icon"
             >
-              <FiTwitter />
+              <Twitter />
             </a>
             <a
               rel="noreferrer"
@@ -31,7 +32,7 @@ const NavBar = (props: Props) => {
               href="https://www.linkedin.com/in/philipp-mergener-9950271a1/"
               className="Icon"
             >
-              <FiLinkedin />
+              <LinkedIn />
             </a>
           </div>
         </div>
@@ -47,7 +48,10 @@ const NavBar = (props: Props) => {
               Contact
             </a>
           </div>
-          <button className="ResumeButton">Resume</button>
+
+          <Link href="/ResumePage">
+            <button className="ResumeButton">Resume</button>
+          </Link>
         </div>
       </div>
     </div>

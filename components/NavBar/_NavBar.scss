@@ -1,24 +1,23 @@
 .NavBar {
-  height: 100px;
-  position: sticky;
-  background: black;
+  height: 90px;
+  position: fixed;
+  background: #000000aa;
   top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   z-index: 1;
+
   .Wrapper {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    padding: 0 20px;
+    height: 100%;
+    padding: 0 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     .Left {
       display: flex;
       align-items: center;
-      justify-content: start;
+      justify-content: flex-start;
       .Logo {
         background-color: lightcoral;
         background-image: $gradient-main;
@@ -37,6 +36,9 @@
 
         .Icon {
           padding-left: 20px;
+          > * {
+            color: blue;
+          }
         }
       }
     }
@@ -46,13 +48,14 @@
       justify-content: center;
       .LinkWrapper {
         .Link {
-          padding-right: 10px;
+          padding-right: 30px;
+          text-decoration: none;
         }
       }
       .ResumeButton {
         all: unset;
         color: $text-main;
-        padding: 0 20px;
+        padding: 5px 20px;
         font-weight: 700;
         border: solid 1px transparent;
         border-image: $gradient-main;
