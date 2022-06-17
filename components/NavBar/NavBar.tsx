@@ -14,25 +14,25 @@ const NavBar = (props: Props) => {
               rel="noreferrer"
               target="_blank"
               href="https://www.github.com/PhilippKNMergener/"
-              className="Icon"
+              className="IconWrapper"
             >
-              <GitHub />
+              <GitHub className="Icon" />
             </a>
             <a
               rel="noreferrer"
               target="_blank"
               href="https://www.twitter.com/philipp_knm"
-              className="Icon"
+              className="IconWrapper"
             >
-              <Twitter />
+              <Twitter className="Icon" />
             </a>
             <a
               rel="noreferrer"
               target="_blank"
               href="https://www.linkedin.com/in/philipp-mergener-9950271a1/"
-              className="Icon"
+              className="IconWrapper"
             >
-              <LinkedIn />
+              <LinkedIn className="Icon" />
             </a>
           </div>
         </div>

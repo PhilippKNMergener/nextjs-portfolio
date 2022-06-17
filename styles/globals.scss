@@ -1,11 +1,12 @@
 //Global variables
-$main-teal: #7ae2f0;
-$main-purple: #5b00c4;
+$teal-main: #3cb2c2;
+$purple-main: #9d00c4;
 $text-main: #e7e7e7;
 $text-secondary: #9b9b9b;
-$bg-main: #00031a;
-$gradient-main: linear-gradient(to right, $main-teal, $main-purple);
-$gradient-radial: radial-gradient(circle, $main-teal, $main-purple);
+$text-bright: #fff;
+$bg-main: #000004;
+$gradient-main: linear-gradient(to right, $teal-main, $purple-main);
+$gradient-radial: radial-gradient(circle, $teal-main, $purple-main);
 
 //Style sheets imports
 @import "/pages/index";

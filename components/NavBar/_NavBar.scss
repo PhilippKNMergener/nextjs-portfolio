@@ -1,7 +1,7 @@
 .NavBar {
   height: 90px;
   position: fixed;
-  background: #000000aa;
+  background: #000000cc;
   top: 0;
   left: 0;
   right: 0;
@@ -10,7 +10,7 @@
 
   .Wrapper {
     height: 100%;
-    padding: 0 40px;
+    padding: 0 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,25 +19,28 @@
       align-items: center;
       justify-content: flex-start;
       .Logo {
-        background-color: lightcoral;
+        cursor: pointer;
         background-image: $gradient-main;
         background-size: 100%;
         background-clip: text;
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
+        -webkit-text-fill-color: $text-secondary;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          -webkit-text-fill-color: transparent;
+        }
       }
       .SocialsWrapper {
-        padding: 10px 0 0px;
+        padding: 10px 0 0 15px;
         display: flex;
         align-items: center;
         justify-content: center;
-
         .Icon {
-          padding-left: 20px;
-          > * {
-            color: blue;
+          margin-left: 25px;
+          &:hover {
+            padding-bottom: 12px;
+            > * {
+              color: $teal-main;
+            }
           }
         }
       }
@@ -48,22 +51,49 @@
       justify-content: center;
       .LinkWrapper {
         .Link {
-          padding-right: 30px;
+          position: relative;
+          margin-right: 50px;
           text-decoration: none;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            transform: scaleX(0);
+            background-color: $teal-main;
+            transition: transform 0.3s ease-in-out;
+          }
+          &:hover {
+            color: $text-bright;
+            &::after {
+              transform: scaleX(1);
+            }
+          }
         }
       }
       .ResumeButton {
         all: unset;
-        color: $text-main;
         padding: 5px 20px;
-        font-weight: 700;
+        width: auto;
+        color: $text-main;
+        font-weight: 600;
+
         border: solid 1px transparent;
         border-image: $gradient-main;
-        -webkit-border-image: $gradient-main;
-        -moz-border-image: $gradient-main;
         border-image-slice: 1;
-        -webkit-border-image-slice: 1;
-        -moz-border-image-slice: 1;
+
+        background-image: $gradient-main;
+        background-clip: text;
+
+        transition: all 0.3s ease-in-out;
+
+        cursor: pointer;
+
+        &:hover {
+          -webkit-text-fill-color: transparent;
+        }
       }
     }
   }

@@ -1,0 +1,60 @@
+.Landing {
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .Wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .Title {
+      .Intro {
+        color: $text-bright;
+        font-size: 20px;
+        font-weight: 300;
+      }
+      .Name {
+        color: $text-bright;
+        font-size: 100px;
+        font-weight: 700;
+
+        background-image: $gradient-main;
+        background-size: 100%;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+      }
+      .Desc {
+        margin-top: -20px;
+        font-size: 75px;
+        font-weight: 600;
+      }
+    }
+    .ScrollText {
+      display: flex;
+      align-items: center;
+      color: $teal-main;
+      animation: bounce 1.5s ease-in-out infinite;
+
+      .Arrow {
+        margin-left: 10px;
+        > * {
+          color: $teal-main;
+        }
+      }
+    }
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0) rotate(90deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(90deg);
+  }
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
+}
